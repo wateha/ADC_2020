@@ -27,6 +27,12 @@
     <ClInclude Include="ACDay2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ACDay3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ACDay4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataFileReader.cpp">
@@ -39,6 +45,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ACDay2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ACDay3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ACDay4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

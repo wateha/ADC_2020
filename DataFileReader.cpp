@@ -3,7 +3,7 @@
 DataFileReader::DataFileReader(std::string fileName, char delimiter, DataType dataType) {
     // Read data file
     DataFileInput(fileName);
-    
+    CleanupData(" ");
     // Parse data streams as selected data type with delimiter
     switch (dataType) {
     case DataType::INT:
@@ -118,4 +118,19 @@ const std::vector <std::vector <std::string>>& DataFileReader::GetStringData() {
 // Float data access
 const std::vector <std::vector <float>>& DataFileReader::GetFloatData() {
     return floatDataVector;
+}
+
+// Cleanup data lines
+void DataFileReader::CleanupData(std::string delimiter) {
+    for (int i = dataInputVector.size() - 1; i > 0; i--) {
+        if (dataInputVector[i - 1].empty()) {
+            dataInputVector.erase(dataInputVector.begin() + i - 1);
+            i--;
+        }
+        else {
+            //dataInputVector[i - 1].pop_back();
+            dataInputVector[i - 1].append(delimiter).append(dataInputVector[i]);
+            dataInputVector.erase(dataInputVector.begin() + i);
+        }
+    }
 }

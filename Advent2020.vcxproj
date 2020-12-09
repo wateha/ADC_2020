@@ -141,12 +141,16 @@
   <ItemGroup>
     <ClInclude Include="ACDay1.h" />
     <ClInclude Include="ACDay2.h" />
+    <ClInclude Include="ACDay3.h" />
+    <ClInclude Include="ACDay4.h" />
     <ClInclude Include="AdventMain.h" />
     <ClInclude Include="DataFileReader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ACDay1.cpp" />
     <ClCompile Include="ACDay2.cpp" />
+    <ClCompile Include="ACDay3.cpp" />
+    <ClCompile Include="ACDay4.cpp" />
     <ClCompile Include="AdventMain.cpp" />
     <ClCompile Include="DataFileReader.cpp" />
   </ItemGroup>

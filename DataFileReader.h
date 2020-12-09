@@ -47,6 +47,9 @@ public:
     // Get float data vectors
     const std::vector <std::vector <float>>& GetFloatData();
 
+    // Cleanup data, if not in single lines
+    void CleanupData(std::string delimiter);
+
 private:
     // Raw data input from file
     std::vector<std::string> dataInputVector{};
