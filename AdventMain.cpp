@@ -18,5 +18,9 @@ int main(std::string* args, int argc)
     std::cout << "Day 4 result: " << day4.GetResult(1) << ";" << std::endl;
     std::cout << "Day 4* result: " << day4.GetResult(2) << ";" << std::endl << std::endl;
 
+    ACDay5 day5 = ACDay5("inputModule_05");
+    std::cout << "Day 5 result: " << day5.GetResult(1) << ";" << std::endl;
+    std::cout << "Day 5* result: " << day5.GetResult(2) << ";" << std::endl << std::endl;
+
     return 0;
 }
