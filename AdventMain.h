@@ -6,6 +6,7 @@
 #include "ACDay4.h"
 #include "ACDay5.h"
 #include "ACDay6.h"
+#include "ACDay7.h"
 
 #include <string>
 

@@ -3,7 +3,6 @@
 #include <string>
 #include <vector>
 
-
 class ACDay5
 {
 public:
