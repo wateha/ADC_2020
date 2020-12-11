@@ -2,6 +2,7 @@
 #include "DataFileReader.h"
 #include <string>
 #include <vector>
+#include <unordered_set>
 
 
 class ACDay6
@@ -12,5 +13,8 @@ public:
 
 private:
     int result_1 {}, result_2 {};
+    std::unordered_set<char> charSet {};
+    std::string comparingString {};
+    std::string CompareStrings(const std::string &firstString, const std::string &secondString);
 };
 
