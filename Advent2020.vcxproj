@@ -148,6 +148,7 @@
     <ClInclude Include="ACDay7.h" />
     <ClInclude Include="AdventMain.h" />
     <ClInclude Include="DataFileReader.h" />
+    <ClInclude Include="NestedBag.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ACDay1.cpp" />
@@ -159,6 +160,7 @@
     <ClCompile Include="ACDay7.cpp" />
     <ClCompile Include="AdventMain.cpp" />
     <ClCompile Include="DataFileReader.cpp" />
+    <ClCompile Include="NestedBag.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

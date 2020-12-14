@@ -1,9 +1,11 @@
 #include "DataFileReader.h"
 
-DataFileReader::DataFileReader(std::string fileName, char delimiter, DataType dataType) {
+DataFileReader::DataFileReader(std::string fileName, char delimiter, DataType dataType, bool clean) {
     // Read data file
     DataFileInput(fileName);
-    CleanupData(" ");
+    if (clean) {
+        CleanupData(" ");
+    }
     // Parse data streams as selected data type with delimiter
     switch (dataType) {
     case DataType::INT:
@@ -14,27 +16,6 @@ DataFileReader::DataFileReader(std::string fileName, char delimiter, DataType da
         break;
     case DataType::FLOAT:
         FloatDataInput(delimiter);
-        break;
-    default:
-        break;
-    }
-}
-
-DataFileReader::DataFileReader(std::string fileName, DataType dataType)
-{
-    // Read data file
-    DataFileInput(fileName);
-
-    // Parse data streams as selected data type with delimiter
-    switch (dataType) {
-    case DataType::INT:
-//IntDataInput();
-        break;
-    case DataType::STR:
-//StrDataInput();
-        break;
-    case DataType::FLOAT:
-//FloatDataInput();
         break;
     default:
         break;

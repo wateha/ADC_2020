@@ -42,6 +42,9 @@
     <ClInclude Include="ACDay7.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NestedBag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataFileReader.cpp">
@@ -69,6 +72,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ACDay7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NestedBag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

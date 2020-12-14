@@ -33,10 +33,7 @@ public:
     };
 
     // Constructor taking data file name, delimiter for data stream inputs and type of data to store
-    DataFileReader(std::string fileName, char delimiter, DataType dataType);
-
-    // Constructor taking data file name and type of data to store, WITHOUT delimiter
-    DataFileReader(std::string fileName, DataType dataType);
+    DataFileReader(std::string fileName, char delimiter, DataType dataType, bool clean = true);
 
     // Get integer data vectors
     const std::vector <std::vector <int>>& GetIntegerData();

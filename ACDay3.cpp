@@ -8,12 +8,6 @@ ACDay3::ACDay3 (std::string dataFileName) {
 
     // Day 3*
     result_2 = CalculateTrees(1, 1) * CalculateTrees(3, 1) * CalculateTrees(5, 1) * CalculateTrees(7, 1) * CalculateTrees(1, 2);
-    std::cout << "CalculateTrees(1, 1) = " << CalculateTrees(1, 1) <<
-        "; CalculateTrees(3, 1) = " << CalculateTrees(3, 1) <<
-        "; CalculateTrees(5, 1) = " << CalculateTrees(5, 1) <<
-        "; CalculateTrees(7, 1) = " << CalculateTrees(7, 1) <<
-        "; CalculateTrees(1, 2) = " << CalculateTrees(1, 2) <<
-        ";" << std::endl;
 }
 
 int ACDay3::CalculateTrees(int xOffset, int yOffset) {
